@@ -1,0 +1,13 @@
+{
+	"autoload" : {
+		"psr-4" : {
+			"CaT\\Plugins\\AQSTest\\" : "./classes"
+		}
+	},
+	"config" : {
+		"autoloader-suffix" : "AQSTest"
+	},
+	"require-dev": {
+		
+	}
+}
