@@ -1,13 +1,33 @@
 {
+	"repositories": [
+		{
+		  "type": "vcs",
+		  "url": "https://github.com/studer-raimann/asq.git"
+		},
+		{
+		  "type": "vcs",
+		  "url": "https://github.com/studer-raimann/cqrs.git"
+		}
+	],
+	"require": {
+		"srag/asq": "dev-review",
+		"srag/cqrs": "dev-review"
+	},
+	"require-dev": {
+	},
 	"autoload" : {
 		"psr-4" : {
 			"CaT\\Plugins\\AQSTest\\" : "./classes"
-		}
+		},
+		"classmap": [
+	  		"classes/",
+	  		"vendor/srag/asq/classes"
+		]
 	},
 	"config" : {
-		"autoloader-suffix" : "AQSTest"
-	},
-	"require-dev": {
-		
+		"autoloader-suffix" : "AQSTest",
+		"classmap-authoritative": true,
+		"optimize-autoloader": true,
+		"sort-packages": true
 	}
 }
